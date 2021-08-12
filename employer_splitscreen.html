@@ -1,0 +1,63 @@
+<?php
+  session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  color: white;
+}
+  .split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+  .left {
+  left: 0;
+  background-color: #111;
+}
+.right {
+  right: 0;
+  background-color: red;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+<main>
+  <section>
+  <div class="split left">
+    <div class="centered">
+      <a href="candidatelist.php"><img src="img_avatar2.png" alt="Avatar woman"></a>
+      <h2>Search Candidate</h2>
+    </div>
+  </div>
+  <div class="split right">
+    <div class="centered">
+      <a href="mainemployer.html"><img src="img_avatar.png" alt="Avatar man"></a>
+      <h2>Post Jobs</h2>
+  </div>
+</div>
+</section>
+</main>
+</body>
+</html> 

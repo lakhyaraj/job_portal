@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<link rel="stylesheet" href="homepageindex.css">
+<style type="text/css">
+
+	body{
+		margin: 0;
+	}
+	.signupbtn {
+     width: 100%;
+  	}
+
+  	body {
+  	font-family: Arial, Helvetica, sans-serif; 
+  	background-color: #474e5d;
+  	/*background-image: url(mainemployer.jpg);*/
+  	padding-top: 50px;
+  	left: 0;
+  	top: 0;
+  	width: 100%; /* Full width */
+  	height: 100%;
+  	font-size: 20px;
+  	margin: 20;
+
+  	}
+	* {box-sizing: border-box;}
+
+	/* Full-width input fields */
+	input[type=text], input[type=password] {
+  	width: 100%;
+  	padding: 15px;
+  	margin: 5px 0 22px 0;
+  	display: inline-block;
+  	border: none;
+  	background: #f1f1f1;
+	}
+
+	/* Add a background color when the inputs get focus */
+	input[type=text]:focus, input[type=password]:focus {
+  	background-color: #ddd;
+  	outline: none;
+	}
+
+	/* Set a style for all buttons */
+	button {
+  	background-color: #4CAF50;
+  	color: white;
+  	padding: 14px 20px;
+  	margin: 8px 0;
+  	border: none;
+  	cursor: pointer;
+  	width: 100%;
+  	opacity: 0.9;
+	}
+
+	button:hover {
+  	opacity:1;
+	}
+
+	.modal-content {
+ 	 background-color: #fefefe;
+  	margin: 5% auto 15% auto; 
+  	border: 1px solid #888;
+  	width: 80%; 
+	}
+	.container {
+  	padding: 16px;
+	}
+
+</style>
+</head>
+<body>
+
+<header>
+	<div class='topheader'>
+        <p style="color: white; font-size:36px;" > <b> &nbsp;&nbsp;&nbsp;<span id="top">CAREER.com</span> </b>	
+        		<div class="dropdown">
+    				<a class="dropbtn" href='index.html'>HOME</a>	 
+			</div>		
+       			<div class="dropdown">
+ 				    <a class="dropbtn" href='em_logout.php'>Logout</a>
+				</div>         	
+        </div>
+    </p><br><br><br><br>
+</div>
+</header>
+<main>
+	<form class="modal-content" action="post.php" method="post">
+    <div class="container">
+      <div style="background-color:#4CAF50; padding: 20px 20px; border-radius: 15px;">
+      <h1>Job Details</h1><h5>Specify details of the position/job you are going to post</h5>
+      </div>
+      <hr>
+
+    <div>
+      <label for="detail"><span>*</span><b>Job Title / Designation:</b></label>
+      <input type="text" placeholder="Use complete words Eg:Type Senior Manager,not Sr.Mgr." name="detail" required>
+    </div>
+
+    <div>
+      <label for="jobdetail"><span>*</span><b>Job Details:</b><br></label>
+      <textarea style="background-color: #ddd;" rows="5" cols="60" name="jobdetail" placeholder="Write here..." ></textarea>
+    </div>
+
+    <div>
+      <label for="keyword"><span>*</span><b>Keyword:</b></label>
+      <input type="text" placeholder="Optional skills,designation role seperated by comma" name="keyword" required>
+    </div>
+
+
+    <div>
+      <label for="qualification"><span>*</span><b>Required Qualification:</b></label>
+      <select style="width: 150px; height: 35px;" name="qualification">
+				<option value="12TH">12TH</option required>
+				<option value="B.TECH">B.TECH</option>
+		 		<option value="M.TECH">M.TECH</option> 
+				<option value="MBBS">MBBS</option>
+				<option value="MBA">MBA</option>
+				<option value="B.PHARMA">B.PHARMA</option>
+				<option value="BCA">BCA</option>
+				<option value="B.Ed">B.Ed</option>
+				<option value="B.SC">B.SC</option>			
+				<option value="M.SC">M.SC</option>
+				<option value="B.COM">B.COM</option>
+				<option value="AGRICULTURE">AGRICULTURE</option>
+		</select>	
+    </div><br><br>
+
+    <div>
+      <label for="work"><span>*</span><b>Work Experience:</b></label>
+      		<select style="width: 150px; height: 35px;" name="work">
+				<option value="Fresher">Fresher</option>
+				<option value="1">1</option>
+		 		<option value="2">2</option> 
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>			
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20+</option>
+			</select>
+    </div><br><br>
+
+    <div>
+	  <label for="location"><span>*</span><b>Location(s) of Job:</b></label>
+	  		<select style="width: 150px; height: 35px;" name="location">
+	  			<option selected="selected">-Select-</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#000000"><i>-Top Metropolitan Cities-</i></font></option>
+				<option>Ahmedabad</option> 
+				<option>Bengaluru/Bangalore</option>
+				<option>Chandigarh</option>
+				<option>Chennai</option>
+				<option>Delhi</option>
+				<option>Gurgaon</option>
+				<option>Hyderabad/Secunderabad</option>
+				<option>Kolkatta</option>
+				<option>Mumbai</option>
+				<option>Noida</option>
+				<option>Pune</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Andhra Pradesh-</i></font></option>
+				<option>Anantapur</option>
+				<option>Guntakal</option>
+				<option>Guntur</option>
+				<option>Hyderabad/Secunderabad</option>
+				<option>kakinada</option>
+				<option>kurnool</option>
+				<option>Nellore</option>
+				<option>Nizamabad</option>
+				<option>Rajahmundry</option>
+				<option>Tirupati</option>
+				<option>Vijayawada</option>
+				<option>Visakhapatnam</option>
+				<option>Warangal</option>
+				<option>Andra Pradesh-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Arunachal Pradesh-</i></font></option>
+				<option>Itanagar</option>
+				<option>Arunachal Pradesh-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Assam-</i></font></option>
+				<option>Guwahati</option>
+				<option>Silchar</option>
+				<option>Assam-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Bihar-</i></font></option>
+				<option>Bhagalpur</option>
+				<option>Patna</option>
+				<option>Bihar-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Chhattisgarh-</i></font></option>
+				<option>Bhillai</option>
+				<option>Bilaspur</option>
+				<option>Raipur</option>
+				<option>Chhattisgarh-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Goa-</i></font></option>
+				<option>Panjim/Panaji</option>
+				<option>Vasco Da Gama</option>
+				<option>Goa-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Gujarat-</i></font></option>
+				<option>Ahmedabad</option>
+				<option>Anand</option>
+				<option>Ankleshwar</option>
+				<option>Bharuch</option>
+				<option>Bhavnagar</option>
+				<option>Bhuj</option>
+				<option>Gandhinagar</option>
+				<option>Gir</option>
+				<option>Jamnagar</option>
+				<option>Kandla</option>
+				<option>Porbandar</option>
+				<option>Rajkot</option>
+				<option>Surat</option>
+				<option>Vadodara/Baroda</option>
+				<option>Valsad</option>
+				<option>Vapi</option>
+				<option>Gujarat-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Haryana-</i></font></option>
+				<option>Ambala</option>
+				<option>Chandigarh</option>
+				<option>Faridabad</option>
+				<option>Gurgaon</option>
+				<option>Hisar</option>
+				<option>Karnal</option>
+				<option>Kurukshetra</option>
+				<option>Panipat</option>
+				<option>Rohtak</option>
+				<option>Haryana-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Himachal Pradesh-</i></font></option>
+				<option>Dalhousie</option>
+				<option>Dharmasala</option>
+				<option>Kulu/Manali</option>
+				<option>Shimla</option>
+				<option>Himachal Pradesh-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Jammu and Kashmir-</i></font></option>
+				<option>Jammu</option>
+				<option>Srinagar</option>
+				<option>Jammu and Kashmir-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Jharkhand-</i></font></option>
+				<option>Bokaro</option>
+				<option>Dhanbad</option>
+				<option>Jamshedpur</option>
+				<option>Ranchi</option>
+				<option>Jharkhand-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Karnataka-</i></font></option>
+				<option>Bengaluru/Bangalore</option>
+				<option>Belgaum</option>
+				<option>Bellary</option>
+				<option>Bidar</option>
+				<option>Dharwad</option>
+				<option>Gulbarga</option>
+				<option>Hubli</option>
+				<option>Kolar</option>
+				<option>Mangalore</option>
+				<option>Mysoru/Mysore</option>
+				<option>Karnataka-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Kerala-</i></font></option>
+				<option>Calicut</option>
+				<option>Cochin</option>
+				<option>Ernakulam</option>
+				<option>Kannur</option>
+				<option>Kochi</option>
+				<option>Kollam</option>
+				<option>Kottayam</option>
+				<option>Kozhikode</option>
+				<option>Palakkad</option>
+				<option>Palghat</option>
+				<option>Thrissur</option>
+				<option>Trivandrum</option>
+				<option>Kerela-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Madhya Pradesh-</i></font></option>
+				<option>Bhopal</option>
+				<option>Gwalior</option>
+				<option>Indore</option>
+				<option>Jabalpur</option>
+				<option>Ujjain</option>
+				<option>Madhya Pradesh-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Maharashtra-</i></font></option>
+				<option>Ahmednagar</option>
+				<option>Aurangabad</option>
+				<option>Jalgaon</option>
+				<option>Kolhapur</option>
+				<option>Mumbai</option>
+				<option>Mumbai Suburbs</option>
+				<option>Nagpur</option>
+				<option>Nasik</option>
+				<option>Navi Mumbai</option>
+				<option>Pune</option>
+				<option>Solapur</option>
+				<option>Maharashtra-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Manipur-</i></font></option>
+				<option>Imphal</option>
+				<option>Manipur-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Meghalaya-</i></font></option>
+				<option>Shillong</option>
+				<option>Meghalaya-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Mizoram-</i></font></option>
+				<option>Aizawal</option>
+				<option>Mizoram-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Nagaland-</i></font></option>
+				<option>Dimapur</option>
+				<option>Nagaland-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Orissa-</i></font></option>
+				<option>Bhubaneshwar</option>
+				<option>Cuttak</option>
+				<option>Paradeep</option>
+				<option>Puri</option>
+				<option>Rourkela</option>
+				<option>Orissa-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Punjab-</i></font></option>
+				<option>Amritsar</option>
+				<option>Bathinda</option>
+				<option>Chandigarh</option>
+				<option>Jalandhar</option>
+				<option>Ludhiana</option>
+				<option>Mohali</option>
+				<option>Pathankot</option>
+				<option>Patiala</option>
+				<option>Punjab-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Rajasthan-</i></font></option>
+				<option>Ajmer</option>
+				<option>Jaipur</option>
+				<option>Jaisalmer</option>
+				<option>Jodhpur</option>
+				<option>Kota</option>
+				<option>Udaipur</option>
+				<option>Rajasthan-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Sikkim-</i></font></option>
+				<option>Gangtok</option>
+				<option>Sikkim-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Tamil Nadu-</i></font></option>
+				<option>Chennai</option>
+				<option>Coimbatore</option>
+				<option>Cuddalore</option>
+				<option>Erode</option>
+				<option>Hosur</option>
+				<option>Madurai</option>
+				<option>Nagerkoil</option>
+				<option>Ooty</option>
+				<option>Salem</option>
+				<option>Thanjavur</option>
+				<option>Tirunalveli</option>
+				<option>Trichy</option>
+				<option>Tuticorin</option>
+				<option>Vellore</option>
+				<option>Tamil Nadu-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Tripura-</i></font></option>
+				<option>Agartala</option>
+				<option>Tripura-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Union Territories-</i></font></option>
+				<option>Chandigarh</option>
+				<option>Dadra & Nagar Haveli-Silvassa</option>
+				<option>Daman & Diu</option>
+				<option>Delhi</option>
+				<option>Pondichery</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Uttar Pradesh-</i></font></option>
+				<option>Agra</option>
+				<option>Aligarh</option>
+				<option>Allahabad</option>
+				<option>Bareilly</option>
+				<option>Faizabad</option>
+				<option>Ghaziabad</option>
+				<option>Gorakhpur</option>
+				<option>Kanpur</option>
+				<option>Lucknow</option>
+				<option>Mathura</option>
+				<option>Meerut</option>
+				<option>Moradabad</option>
+				<option>Noida</option>
+				<option>Varanasi/Banaras</option>
+				<option>Uttar Pradesh-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Uttaranchal-</i></font></option>
+				<option>Dehradun</option>
+				<option>Roorkee</option>
+				<option>Uttaranchal-Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-West Bengal-</i></font></option>
+				<option>Asansol</option>
+				<option>Durgapur</option>
+				<option>Haldia</option>
+				<option>Kharagpur</option>
+				<option>Kolkatta</option>
+				<option>Siliguri</option>
+				<option>West Bengal - Other</option>
+				<option disabled="disabled" style="background-color:#3E3E3E"><font color="#FFFFFF"><i>-Other-</i></font></option>
+				<option>Other</option>
+	  		</select>
+	</div><br><br>
+
+	<div>
+	  <label for="ctc"><span>*</span><b>Anual CTC:</b></label>
+	  		<select style="width: 30px; height: 35px;">
+	  			<option value="$">$</option>
+	  			<option value="₹">₹</option>
+	  		</select>
+	  		<label>Minimum:</label>
+	  		<select name="min" style="width: 150px; height: 35px;">
+	  			<option value="250000">250000</option>
+	  			<option value="300000">300000</option>
+	  			<option value="350000">350000</option>
+	  			<option value="400000">400000</option>
+	  		</select>
+	  		<select style="width: 150px; height: 35px;" name="max">
+	  			<label>Maximum:</label>
+	  			<option value="800000">800000</option>
+				<option value="900000">900000</option>
+				<option value="1000000">1000000</option>
+				<option value="1100000">1100000</option>
+				<option value="1200000">1200000</option>  		
+	  		</select>
+    </div><br><br>
+
+    <div>
+      <label for="vanc"><span>*</span><b>Number of Vacancies:</b></label>
+      <input type="text"  maxlength="4" style="width:80px; margin-bottom:30px;"  name="vanc" required>
+    </div>
+
+    <div>
+      <label for="email"><span>*</span><b>Email:</b></label>
+      <input style="width: 250px; height: 35px;" type="email" placeholder="exaple@example.com" name="email" required>
+    </div><br><br>
+
+    <div>  
+      <label><span>*</span><b> Employment Type:</b></label>
+            <label for="PERMANENT">
+                <input style="margin-bottom:30px" name="employmentType"  type="radio" value="PERMANENT" checked>Permanent</label>
+            <label for="CONTRACT">
+                <input style="margin-bottom:30px" name="employmentType"  type="radio" value="CONTRACT">Temporary/Contractual Job</label>
+            <label for="FREELANCE">
+                <input style="margin-bottom:30px" name="employmentType"  type="radio" value="FREELANCE">Freelance/Home based</label>
+    </div>
+
+    <div>  
+      <label><span>*</span> <b>Job Type:</b></label>
+            <label for="FULL_TIME">
+                <input style="margin-bottom:30px" name="jobAgreementType" type="radio" value="FULL_TIME" checked>Full time Job</label>
+            <label for="PART_TIME">
+                <input style="margin-bottom:30px" name="jobAgreementType" type="radio" value="PART_TIME">Part Time Job</label>
+    </div>
+
+    
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By posting job details you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="submit" class="signupbtn">Post</button>
+      </div>
+    </div>
+  </form>	
+</main>
+<footer class="footer">
+        <!-- contact -->
+        <div class="contact">
+            <h2>Contact Us:</h2>
+            <p>Email : abss@gmail.com<br>
+                GIET University,Gunupur</p>
+            <h3>Team ABSS</h3>
+        </div>
+    </footer>
+
+</body>
+</html>

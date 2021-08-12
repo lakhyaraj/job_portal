@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" href="homepageindex.css">
+<style type="text/css">
+	body{
+		background-color: #666699;
+    margin: 0;
+	}
+
+	* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+.modal-content {
+ 	 background-color: #fefefe;
+  	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  	border: 1px solid #888;
+  	width: 50%; /* Could be more or less, depending on screen size */
+	border-radius: 10px;
+	border-style: solid;
+	}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+  .contact{
+    text-align: center;
+    text-decoration-color: white;
+    padding: 1px 1px;
+  }
+</style>
+</head>
+<body>
+      <header>
+  <div class='topheader'>
+        <p style="color: white; font-size:36px;" > <b> &nbsp;&nbsp;&nbsp;<span id="top">JOBMONSTER</span> </b>  
+          <div class="active">     
+              <div class="dropdown">
+            <button class="dropbtn">JOBS</button>
+              <div class="dropdown-content">
+                <a href="http://localhost/FINAL/jobsbylocation.html">JOBS BY LOCATION</a>
+                <a href="http://localhost/FINAL/jobsbyqualification.html">JOBS BY QUALIFICATION</a>   
+              </div>
+        </div>
+              <div class="dropdown">
+            <button class="dropbtn">RECRUITERS</button>
+              <div class="dropdown-content">
+                <a href="http://localhost/FINAL/searchbar.html">SEARCH RECRUITERS</a>
+                <a href="http://localhost/FINAL/jobsbyrecruiter.html">JOBS BASED RECRUITERS</a>   
+              </div>
+        </div>              
+            <div class="dropdown">
+            <button class="dropbtn">LOGIN</button>
+              <div class="dropdown-content">
+                <a href="http://localhost/CANDIDATE/loginform.html">CANDIDATE LOGIN</a>
+                <a href="http://localhost/CANDIDATE/candid_%20registform.html">CANDIDATE REGISTER</a>   
+              </div>
+        </div>    
+            <div class="dropdown">
+            <button class="dropbtn">FOR EMPLOYER</button>
+              <div class="dropdown-content">
+                <a href="companylogin.html">EMPLOYER LOGIN</a>
+                <a href="companyform.html">EMPLOYER REGISTER</a>   
+              </div>
+        </div>        
+        </div>
+    </p><br><br><br><br>
+</div>
+</header>
+<main>
+<form class="modal-content" action="comlogin.php" method="post" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>LOGIN</h1>
+    
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="eid" required>
+
+    <label for="pwd"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pwd" required>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn"><a href="main.html">Cancel</a></button>
+      <button type="submit" class="signupbtn">Login</button>
+    </div>
+  </div>
+</form>
+</main>
+ <footer class="footer">
+        <!-- contact -->
+        <div class="contact">
+            <h2>Contact Us:</h2>
+            <p>Email : abss@gmail.com<br>
+                GIET University,Gunupur</p>
+            <h3>Team ABSS</h3>
+        </div>
+    </footer>
+</body>
+</html>

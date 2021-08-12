@@ -1,0 +1,176 @@
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" href="homepageindex.css">
+<style type="text/css">
+	body{
+		background-color: #666699;
+	   margin: 0;
+  }
+
+	* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.loginbtn{
+	float:center;
+	width:50%;
+	background-color: #F7AA35;
+
+
+}
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+.modal-content {
+ 	 background-color: #fefefe;
+  	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  	border: 1px solid #888;
+  	width: 65%; /* Could be more or less, depending on screen size */
+	border-radius: 10px;
+	border-style: solid;
+	}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  .footer{
+    background-color: #2d2d44;
+  }
+
+  .contact{
+    text-align: center;
+    text-decoration-color: white;
+    padding: 1px 1px;
+  }
+
+</style>
+</head>
+<body vlink="white">
+    <header>
+  <div class='topheader'>
+        <p style="color: white; font-size:36px;" > <b> &nbsp;&nbsp;&nbsp;<span id="top">JOBMONSTER</span> </b>  
+               <div class="active">     
+              <div class="dropdown">
+            <button class="dropbtn">JOBS</button>
+              <div class="dropdown-content">
+                <a href="http://localhost/FINAL/jobsbylocation.html">JOBS BY LOCATION</a>
+                <a href="http://localhost/FINAL/jobsbyqualification.html">JOBS BY QUALIFICATION</a>   
+              </div>
+        </div>
+              <div class="dropdown">
+            <button class="dropbtn">RECRUITERS</button>
+              <div class="dropdown-content">
+                <a href="http://localhost/FINAL/searchbar.html">SEARCH RECRUITERS</a>
+                <a href="http://localhost/FINAL/jobsbyrecruiter.html">JOBS BASED RECRUITERS</a>   
+              </div>
+        </div>              
+            <div class="dropdown">
+            <button class="dropbtn">LOGIN</button>
+              <div class="dropdown-content">
+                <a href="http://localhost/CANDIDATE/loginform.html">CANDIDATE LOGIN</a>
+                <a href="http://localhost/CANDIDATE/candid_%20registform.html">CANDIDATE REGISTER</a>   
+              </div>
+        </div> 
+        </div>    
+            <div class="dropdown">
+            <button class="dropbtn">FOR EMPLOYER</button>
+              <div class="dropdown-content">
+                <a href="companylogin.html">EMPLOYERLOGIN</a>
+                <a href="companyform.html">EMPLOYERREGISTER</a>   
+              </div>
+        </div>        
+        </div>
+    </p><br><br><br><br>
+</div>
+</header>
+<main>
+	<form class="modal-content" action="company.php" method="post" style="border:1px solid #ccc">
+		<div class="container">
+    		<h1>COMPANY REGISTRATION</h1>
+    		<hr>
+		<label for="companyname"><b>Company Name: </b></label>
+    	<input type="text" placeholder="Enter your Comapny Name" name="cn" required>
+		
+		<label for="email"><b>Email: </b></label>
+    	<input type="email" placeholder="eg:abc@xyzmail.com" name="email" style="margin-bottom: 30px ; width: 240; height: 50" required><br>
+		
+		<label for="password"><b>Password: </b></label>
+    	<input type="password" placeholder="Enter your Password" name="pwd"  required>
+			
+    <label for="Contact Number"><b>Contact Number: </b></label>
+      <input type="number" placeholder="Enter your Contact Number" name="cont" style="margin-bottom: 30px ; width: 200 ; height: 50" required><br>
+      
+       <div class="clearfix">
+		 		<button type="submit" class="signupbtn">Signup</button><br>
+			</div>
+		<div>
+			<p style="float: center; "> Already have an account? </p>
+			<button type="button" class="loginbtn"><a style="text-decoration: none;" href="loginform.html">LOGIN</a></button>
+		</div>
+
+		</div>
+	</form>
+</main>
+  <footer class="footer">
+        <!-- contact -->
+        <div class="contact">
+            <h2>Contact Us:</h2>
+            <p>Email : abss@gmail.com<br>
+                GIET University,Gunupur</p>
+            <h3>Team ABSS</h3>
+        </div>
+    </footer>
+
+</body>
+</html>
+

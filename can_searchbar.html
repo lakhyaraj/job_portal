@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="homepageindex.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+
+}
+.topnav input[type=text] {
+  font-size: 17px;
+  width: 50%;
+  height: 30px;
+}
+
+.topnav button[type=submit]
+{
+  font-size: 17px;
+  width: 10%;
+  height: 35px;
+}
+
+.sec{
+  background-color: #82D2DA;
+  padding-bottom: 250px;
+  padding-top: 250px;
+}
+
+.example {
+  background: #2196F3;
+  color: white;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.example:hover {
+  background: #888;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+</style>
+</head>
+<body>
+    <header>
+  <div class='topheader'>
+        <p style="color: white; font-size:36px;" > <b> &nbsp;&nbsp;&nbsp;<span id="top"></span>JOBMONSTER</b>  
+          <div class="active">     
+              <div class="dropdown">
+            <button class="dropbtn">JOBS</button>
+              <div class="dropdown-content">
+                <a href="can_jobsbylocation.html">JOBS BY LOCATION</a>
+                <a href="can_jobsbyqualification.html">JOBS BY QUALIFICATION</a>   
+              </div>
+        </div>
+        
+              <div class="dropdown">
+            <button class="dropbtn">RECRUITERS</button>
+              <div class="dropdown-content">
+                <a href="can_searchbar.html">SEARCH RECRUITERS</a>
+                <a href="can_jobsbyrecruiter.html">JOBS BASED RECRUITERS</a>   
+              </div>
+        </div>              
+
+        <div class="dropdown">
+            <a class="dropbtn" href='showdetails.php'>MY PROFILE</a>
+        </div>
+
+        <div class="dropdown">
+            <a class="dropbtn" href='can_logout.php'>Logout</a>
+        </div>    
+        
+    </p><br><br><br><br>
+</div>
+</header>
+  <main>
+    <section class="sec"> 
+      <div class="topnav">
+        <center>
+             <form action="searchrecruiter.php" method="get">
+                <input type="text" placeholder="Search Jobs based on qualification,company, location,employe type etc..." name="search">
+                <button class="example" type="submit">Search</button>
+          </form>
+        </center>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <footer class="footer">
+        <!-- contact -->
+        <div class="contact">
+            <h2>Contact Us:</h2>
+            <p>Email : abss@gmail.com<br>
+                GIET University,Gunupur</p>
+            <h3>Team ABSS</h3>
+        </div>
+    </footer>
+  </footer>
+</body>
+</html>
